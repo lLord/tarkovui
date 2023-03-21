@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Bender;
+    src: url("../fonts/Jovanny_Lemonad_-_Bender.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Bender;
+    font-weight: bold;
+    src: url("../fonts/Jovanny_Lemonad_-_Bender-Bold.otf") format("opentype");
+}
+
+html, body {
+    color: #fff;
+    background: url(../img/win11.png) no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Bender;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#launcher-container {
+    width: 1200px;
+    height: 760px;
+    margin-top: 66px;
+    position: relative;
+	background: url(../img/launcher_bg.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#client-version, #game-version {
+    position: absolute;
+    bottom: 0;
+    padding: 3px 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#client-version {
+    right: 0;
+	opacity: 0.5;
+}
+
+#game-version {
+    left: 75px;
+	opacity: 0.7;
+}
+
+#leftbar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 70px;
+	background-color: rgba(0,0,0,0.6);;
+}
+.gold {
+	font-weight: bold;
+	color: gold;
+}
+
